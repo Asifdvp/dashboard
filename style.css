@@ -15,18 +15,23 @@
 }
 body {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  background-image: url("./images/main/main-right/back.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: 110;
 }
 
 header {
   padding: 20px 0px;
   width: 100%;
   background-color: white;
-  border-bottom: 1px solid #F1F1F5;
+  border-bottom: 1px solid #f1f1f5;
 }
 header .container {
   display: flex;
   align-items: center;
-  color: #474C54;
+  color: #474c54;
   width: 90%;
   justify-content: space-evenly;
   font-size: 16px;
@@ -44,7 +49,7 @@ header .container .search {
 header .container .search input {
   width: 100%;
   border-radius: 30px;
-  background: #F1F1F5;
+  background: #f1f1f5;
   border: none;
   outline: none;
   font-size: 14px;
@@ -84,7 +89,7 @@ header .container .nav img {
 }
 header .container .nav .line {
   height: 50px;
-  border-right: 1px solid #E6E6E6;
+  border-right: 1px solid #e6e6e6;
 }
 header .container .nav .nofications {
   padding-top: 3px;
@@ -92,7 +97,7 @@ header .container .nav .nofications {
 }
 header .container .nav .nofications .num {
   border-radius: 50%;
-  background-color: #F9C20A;
+  background-color: #f9c20a;
   font-size: 11px;
   width: 16px;
   height: 16px;
@@ -110,7 +115,7 @@ header .container .user {
   width: 12%;
 }
 header .container .user .user-about .user-name {
-  color: #231F20;
+  color: #231f20;
 }
 header .container .user .user-about .user-job {
   color: #616173;
@@ -144,12 +149,78 @@ main .left .context .circle {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #D4D8E2;
+  background-color: #d4d8e2;
 }
 main .left .context .orange {
-  background-color: #FAA61A;
+  background-color: #faa61a;
 }
 main .left .context span {
   color: #616173;
   font-size: 14px;
+}
+main .right {
+  width: calc(100% - 130px);
+  padding: 0px 0px 0px 100px;
+}
+main .right .right-header {
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+}
+main .right .right-header ul {
+  width: 86.5%;
+  display: flex;
+  justify-content: space-between;
+}
+main .right .right-header ul li a {
+  display: block;
+  color: black;
+  font-size: 16px;
+  padding: 18px 0;
+  display: flex;
+  align-items: center;
+}
+main .right .right-header ul li a .right-num {
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 12px;
+  border: 1px solid #faa61a;
+  color: #faa61a;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+main .right .cards {
+  margin-top: 25px;
+  width: 86.5%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+main .right .cards h2 {
+  font-size: 30px;
+}
+main .right .cards .value {
+  padding-left: 0;
+  border: 1px solid #E7E7E7;
+  border-radius: 48px;
+  width: 360px;
+  height: 50px;
+  background-color: #F6F6FA;
+  display: flex;
+}
+main .right .cards .value .all {
+  background: #FFFFFF;
+  width: 18%;
+  z-index: 32;
+  border: 1px solid #E6E6E6;
+  box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+  border-radius: 48px;
+  display: flex;
+  justify-content: center;
+  font-size: 14px;
+  margin-left: -2px;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

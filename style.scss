@@ -1,177 +1,239 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 //Proxima-nova fontu üçün kod
 @font-face {
-	font-family: 'proxima_nova_rgregular';
-	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-	src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-		 url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff")
+      format("woff"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf")
+      format("truetype"),
+    url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 //variables
-$color47: #474C54;
-$color61 : #616173;
-$color23: #231F20;
-$colorD4:#D4D8E2;
+$color47: #474c54;
+$color61: #616173;
+$color23: #231f20;
+$colorD4: #d4d8e2;
 $font16: 16px;
-$font14 : 14px;
+$font14: 14px;
 
-body{
-	font-family: 'proxima_nova_rgregular', Helvetica, Arial, sans-serif;
+body {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  background-image: url("./images/main/main-right/back.svg")      ;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  z-index: 110;
 }
 
-header{
-    padding: 20px 0px;
-    width: 100%;
+header {
+  padding: 20px 0px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #f1f1f5;
+  .container {
+    display: flex;
+    align-items: center;
+    color: $color47;
+    width: 90%;
+    justify-content: space-evenly;
+    font-size: $font16;
+    .phone {
+      display: flex;
+      align-items: center;
+    }
+    .search {
+      display: flex;
+      width: 24.653vw;
+      padding: 9px;
+      position: relative;
+      input {
+        width: 100%;
+        border-radius: 30px;
+        background: #f1f1f5;
+        border: none;
+        outline: none;
+        font-size: $font14;
+        padding: 8px 30px;
+        ::placeholder {
+          color: $color61;
+          font-size: $font14;
+        }
+        :focus {
+          outline: none;
+          border: none;
+        }
+      }
+      .search-button {
+        position: absolute;
+        left: 19px;
+        opacity: 0.5;
+        top: 31.2%;
+      }
+    }
+    .nav {
+      display: flex;
+      width: 29.653vw;
+      justify-content: space-evenly;
+      align-items: center;
+      img {
+        width: 21px;
+        height: 23px;
+      }
+      .line {
+        height: 50px;
+        border-right: 1px solid #e6e6e6;
+      }
+      .nofications {
+        padding-top: 3px;
+        position: relative;
+        .num {
+          border-radius: 50%;
+          background-color: #f9c20a;
+          font-size: 11px;
+          width: 16px;
+          height: 16px;
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 12%;
+      .user-about {
+        .user-name {
+          color: $color23;
+        }
+        .user-job {
+          color: $color61;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+main {
+  display: flex;
+  .left {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    width: 130px;
+    padding: 10px 0 50px;
+    height: 820px;
     background-color: white;
-    border-bottom: 1px solid #F1F1F5;
-    .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .context {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .circle {
+        width: 50px;
+        height: 50px;
         display: flex;
         align-items: center;
-        color: $color47;
-        width: 90%;
-        justify-content: space-evenly;
-        font-size: $font16;
-        .phone{
-            display: flex;
-            align-items: center;
-        }
-        .search{
-            display: flex;
-            width: 24.653vw;
-            padding: 9px;
-            position: relative;
-input{
-    width: 100%;
-    border-radius: 30px;
-    background: #F1F1F5;
-    border: none;
-    outline: none;
-    font-size: $font14;
-    padding: 8px 30px;
-    ::placeholder{
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $colorD4;
+      }
+      .orange {
+        background-color: #faa61a;
+      }
+      span {
         color: $color61;
         font-size: $font14;
-                    }
-                    :focus{
-                        outline: none;
-                        border: none;
-                    }
-}
-.search-button{
-    position: absolute;
-    left: 19px;
-    opacity: 0.5;
-    top: 31.2%;
+      }
+    }
+  }
+  .right {
+    width: calc(100% - 130px);
+    padding: 0px 0px 0px 100px;
 
-}
-         
-        }
-        .nav{
-            display: flex;
-            width: 29.653vw;
-            justify-content: space-evenly;
-            align-items: center;
-            img{
-                width: 21px;
-                height: 23px;
-            }
-            .line{
-                height: 50px;
-                border-right: 1px solid #E6E6E6;
-            }
-            .nofications{
-                padding-top: 3px;
-                position: relative;
-                .num{
-                    border-radius: 50%;
-                    background-color: #F9C20A;
-                    font-size: 11px;
-                    width: 16px;
-                    height: 16px;
-                    position: absolute;
-                    top: -10px;
-                    right: -10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                }
-            }
-        }
-     .user{
+    .right-header {
+      z-index: 2;
+      width: 100%;
+      background-color: white;
+      ul {
+        width: 86.5%;
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        width: 12%;
-        .user-about{
-            .user-name{
-                color: $color23;
-            }
-            .user-job{
-                color: $color61;
-                font-size: 13px;
-            }
-        }
-     }
-     
-    }
-
-}
-main{
-    display: flex;
-    .left{
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-        width: 130px;
-        
-        padding: 10px 0 50px ;
-        height: 820px;
-        background-color:white ;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .context{
-            text-align: center;
+        li {
+          a {
+            display: block;
+            color: black;
+            font-size: $font16;
+            padding: 18px 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            .circle{
-                width: 50px;
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border-radius: 50%;
-                background-color: $colorD4;
+            .right-num {
+              padding: 6px 10px;
+              border-radius: 15px;
+              font-size: 12px;
+              border: 1px solid #faa61a;
+              color: #faa61a;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 10px;
             }
-            .orange{
-                background-color: #FAA61A;
-            }
-            span{
-color: $color61;       
-font-size: $font14;
-     }
+          }
         }
-       
-        
+      }
     }
-    .right{
-        width: calc(100%-130px);
-        padding: 0px 111px;
-        background-color: red;
-    }
-}
+    .cards {
+        margin-top: 25px;
 
-body{
-    background-color: red;
+      width: 86.5%;
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      h2 {
+        font-size: 30px;
+      }
+      .value{
+        padding-left: 0;
+        border: 1px solid #E7E7E7;
+border-radius: 48px;
+width: 360px;
+height: 50px;
+background-color: #F6F6FA;
+display: flex;
+.all{
+    background: #FFFFFF;
+    width: 18%;
+z-index: 32;
+border: 1px solid #E6E6E6;
+box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
+border-radius: 48px;
+display: flex;
+justify-content: center;
+font-size: 14px;
+margin-left: -2px;
+align-items: center;
+}
+      }
+    }
+  }
 }
