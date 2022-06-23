@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "proxima_nova_rgregular";
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot");
+  src: url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff") format("woff"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf") format("truetype"), url("https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  background: red;
+}
+
+header {
+  padding: 20px 0px;
+  width: 100%;
+  background-color: white;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  color: #474C54;
+  width: 90%;
+  justify-content: space-evenly;
+  font-size: 16px;
+}
+header .container .phone {
+  display: flex;
+  align-items: center;
+}
+header .container .search {
+  display: flex;
+  width: 355px;
+  padding: 9px;
+  position: relative;
+}
+header .container .search input {
+  width: 100%;
+  border-radius: 30px;
+  background: #F1F1F5;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 8px 30px;
+}
+header .container .search input ::-moz-placeholder {
+  color: #616173;
+  font-size: 14px;
+}
+header .container .search input :-ms-input-placeholder {
+  color: #616173;
+  font-size: 14px;
+}
+header .container .search input ::placeholder {
+  color: #616173;
+  font-size: 14px;
+}
+header .container .search input :focus {
+  outline: none;
+  border: none;
+}
+header .container .search .search-button {
+  position: absolute;
+  left: 19px;
+  opacity: 0.5;
+  top: 31.2%;
+}
+header .container .nav {
+  display: flex;
+  width: 427px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .container .nav img {
+  width: 21px;
+  height: 23px;
+}
+header .container .nav .line {
+  height: 50px;
+  border-right: 1px solid #E6E6E6;
+}
+header .container .nav .nofications {
+  padding-top: 3px;
+  position: relative;
+}
+header .container .nav .nofications .num {
+  border-radius: 50%;
+  background-color: #F9C20A;
+  font-size: 11px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .container .user {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12%;
+}/*# sourceMappingURL=style.css.map */
