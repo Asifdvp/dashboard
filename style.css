@@ -192,30 +192,29 @@ main .right .right-header ul li a .right-num {
   justify-content: center;
   margin-left: 10px;
 }
-main .right .cards {
+main .right .cards-header {
   margin-top: 25px;
   width: 86.5%;
-  height: 100vh;
   display: flex;
   justify-content: space-between;
 }
-main .right .cards h2 {
+main .right .cards-header h2 {
   font-size: 30px;
 }
-main .right .cards .value {
+main .right .cards-header .value {
   padding-left: 0;
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   border-radius: 48px;
   width: 360px;
   height: 50px;
-  background-color: #F6F6FA;
+  background-color: #f6f6fa;
   display: flex;
 }
-main .right .cards .value .all {
-  background: #FFFFFF;
+main .right .cards-header .value .all {
+  background: #ffffff;
   width: 18%;
   z-index: 32;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   box-shadow: 0px 2px 4px rgba(97, 97, 115, 0.15);
   border-radius: 48px;
   display: flex;
@@ -223,4 +222,65 @@ main .right .cards .value .all {
   font-size: 14px;
   margin-left: -2px;
   align-items: center;
+}
+main .right .cards-header .value .money {
+  color: #616173;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25px;
+}
+main .right .cards-header .value .money p {
+  font-size: 14px;
+}
+main .right .cards-header .value .money span {
+  font-size: 12px;
+}
+main .right .cards-header .value :nth-child(2) {
+  margin-left: 6px;
+}
+main .right .cards {
+  width: 86.5%;
+  padding-left: 31px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding-top: 14px;
+  padding-right: 25px;
+  margin-top: 15px;
+}
+main .right .cards table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .right .cards table thead {
+  width: 100%;
+}
+main .right .cards table thead .thead-tr {
+  width: 16%;
+  text-align: left;
+  color: #9696AA;
+  font-size: 12px;
+}
+main .right .cards table thead .thead-tr th {
+  padding: 0 15px;
+  padding-bottom: 15px;
+}
+main .right .cards table tbody {
+  width: 100%;
+}
+main .right .cards table tbody tr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+main .right .cards table tbody tr td {
+  padding: 0 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-size: 16px;
+  text-align: left;
+}
+main .right .cards table tbody .tbody-tr td {
+  padding-top: 25px;
+  color: #474C54;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
