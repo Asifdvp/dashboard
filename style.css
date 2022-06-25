@@ -259,7 +259,7 @@ main .right .cards table thead {
 main .right .cards table thead .thead-tr {
   width: 16%;
   text-align: left;
-  color: #9696AA;
+  color: #9696aa;
   font-size: 12px;
 }
 main .right .cards table thead .thead-tr th {
@@ -281,6 +281,6 @@ main .right .cards table tbody tr td {
 }
 main .right .cards table tbody .tbody-tr td {
   padding-top: 25px;
-  color: #474C54;
+  color: #474c54;
   font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
